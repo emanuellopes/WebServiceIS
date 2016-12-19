@@ -28,8 +28,5 @@ C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\Sma
 C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\bin\Microsoft.ApplicationInsights.xml
 C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\obj\Debug\SmartH2O_Service.csprojResolveAssemblyReference.cache
 C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\obj\Debug\SmartH2O_Service.dll
 C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\obj\Debug\SmartH2O_Service.pdb
-C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\bin\App_Data\log_sensors.xml
-C:\Users\Emanuel Lopes\Desktop\ola_repo\SmartH2O_Service-master\WebServiceIS\SmartH2O_Service\bin\App_Data\log_sensors.xsd

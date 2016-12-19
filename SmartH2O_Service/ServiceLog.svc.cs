@@ -18,7 +18,7 @@ namespace SmartH2O_Service
     public class ServiceLog : IServiceLog
     {
         string teste = HttpContext.Current.Server.MapPath("bin\\App_Data\\log_sensors.xml");
-        static string XmlPath= HttpContext.Current.Server.MapPath("bin\\App_Data\\log_sensors.xml");
+        static string XmlPath= Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_sensors.xml");
         static string XsdPath = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_sensors.xsd");
         static string XmlPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_alarms.xml");
         static string XsdPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_alarms.xsd");
