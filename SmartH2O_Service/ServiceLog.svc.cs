@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using System.Web;
 using System.Web.Hosting;
 using System.Xml;
 using System.Xml.Linq;
@@ -16,6 +17,7 @@ namespace SmartH2O_Service
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceLog.svc or ServiceLog.svc.cs at the Solution Explorer and start debugging.
     public class ServiceLog : IServiceLog
     {
+        string teste = HttpContext.Current.Server.MapPath("App_Data\\log_sensors.xml");
         static string XmlPath= Path.Combine(HostingEnvironment.ApplicationPhysicalPath,"App_Data\\log_sensors.xml");
         static string XsdPath = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_sensors.xsd");
         static string XmlPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_alarms.xml");
@@ -27,12 +29,12 @@ namespace SmartH2O_Service
 
         public string DoWork()
         {
-            if (!File.Exists(XmlPath))
+            if (!File.Exists(teste))
             {
-                return "nao existe"+XmlPath;
+                return "nao existe"+teste;
             }
 
-            return "fudeu";
+            return "ola"+teste;
         }
 
         public string SendAlarm(string docc)
