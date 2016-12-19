@@ -24,10 +24,12 @@ namespace SmartH2O_Service
         static bool xmlValid = true;
         static string strXmlErrorReason;
 
-        
+
         public string DoWork()
         {
-            return XmlPath;
+            File.Exists(XmlPath);
+
+            return XmlPath + File.ReadAllLines(XmlPath)[0];
         }
 
         public string SendAlarm(string docc)
@@ -143,6 +145,7 @@ namespace SmartH2O_Service
             XmlDocument doc = new XmlDocument();
             StringBuilder sb = new StringBuilder();
             doc.Load(XmlPath);
+            
             if (doc != null)
             {
                 XmlNodeList xnList =  doc.SelectNodes("/Sensors/Sensor[Name='"+name+"']");
