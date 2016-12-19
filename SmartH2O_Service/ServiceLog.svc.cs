@@ -17,7 +17,7 @@ namespace SmartH2O_Service
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceLog.svc or ServiceLog.svc.cs at the Solution Explorer and start debugging.
     public class ServiceLog : IServiceLog
     {
-        string teste = HttpContext.Current.Server.MapPath("App_Data\\log_sensors.xml");
+        string teste = HttpContext.Current.Server.MapPath("bin\\App_Data\\log_sensors.xml");
         static string XmlPath= Path.Combine(HostingEnvironment.ApplicationPhysicalPath,"App_Data\\log_sensors.xml");
         static string XsdPath = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_sensors.xsd");
         static string XmlPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log_alarms.xml");
