@@ -16,10 +16,10 @@ namespace SmartH2O_Service
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServiceLog.svc or ServiceLog.svc.cs at the Solution Explorer and start debugging.
     public class ServiceLog : IServiceLog
     {
-        static string XmlPath= HostingEnvironment.ApplicationPhysicalPath + "App_Data\\log-sensors.xml";
-        static string XsdPath = HostingEnvironment.ApplicationPhysicalPath + "App_Data\\log-sensors.xsd";
-        static string XmlPathAlarm = HostingEnvironment.ApplicationPhysicalPath + "App_Data\\log-alarms.xml";
-        static string XsdPathAlarm = HostingEnvironment.ApplicationPhysicalPath + "App_Data\\log-alarms.xsd";
+        static string XmlPath= Path.Combine(HostingEnvironment.ApplicationPhysicalPath,"App_Data\\log-sensors.xml");
+        static string XsdPath = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log-sensors.xsd");
+        static string XmlPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log-alarms.xml");
+        static string XsdPathAlarm = Path.Combine(HostingEnvironment.ApplicationPhysicalPath, "App_Data\\log-alarms.xsd");
 
         static bool xmlValid = true;
         static string strXmlErrorReason;
@@ -27,7 +27,7 @@ namespace SmartH2O_Service
         
         public string DoWork()
         {
-            return "You are in!";
+            return XmlPath;
         }
 
         public string SendAlarm(string docc)
