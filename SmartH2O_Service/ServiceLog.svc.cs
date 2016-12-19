@@ -29,9 +29,14 @@ namespace SmartH2O_Service
 
         public string DoWork()
         {
-            if (!File.Exists(teste))
+            if (!File.Exists(XmlPath))
             {
-                return "nao existe"+teste;
+                File.WriteAllLines(XmlPath, new string[] { "ola" });
+                if (!File.Exists(XmlPath))
+                {
+                    return "continua a nao existir";
+                }
+                    return "nao existe,,,e"+teste;
             }
 
             return "ola"+teste;
